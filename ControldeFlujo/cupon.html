@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cupon.css">
+    <title>Cupon de Descuento</title>
+</head>
+<body>
+    <!--
+Escribir un programa que detecte el cupón que tiene el usuario
+
+Bronce se le hará un descuento del 5 %
+Plata se le hará un descuento del 10%
+Oro se le hará un descuento del 20%
+Platino se le hará el descuento del 25%
+
+-El usuario introduce el precio primero y después el cupón
+-El programa debe mostrar el precio original y el precio con el descuento aplicado
+-También debe mostrar el mensaje "El cupón no es válido" en caso de que sea un cupón equivocado.
+
+    -->
+    <h1>
+        <p>Calcula tu descuento.</p>
+    </h1>
+    <div>
+        <p>
+            <label class="cup" for="precio">Precio:   </label>
+            <input type="text" name="precio" id="precio" placeholder="Escribe aqui el precio.">
+        </p>
+
+        <p>
+            <ul>
+            <h3>Tipo de Cupones:</h3>
+            <li>Bronce</li>
+            <li>Plata</li>
+            <li>Oro</li>
+            <li>Platino</li>
+        </ul>
+        </p>
+
+        <p>
+            <label class="cup" for="cupon">Cupon:   </label>
+            <input type="text" name="cupon" id="cupon" placeholder="Escribe aqui tu cupon.">
+        </p>
+
+        <p>
+            <button onclick="getCupon();">Calcular.</button>
+        </p>
+    </div>
+    <p id="respuesta"></p>
+    <script src="assets/js/cupon.js"></script>
+</body>
+</html>
